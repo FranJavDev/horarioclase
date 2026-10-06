@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FormProfe</title>
+    <link rel="stylesheet" href="formprofe.css" />
+  </head>
+  <body>
+    <h1>Formulario de profesor</h1>
+
+    <form action="profesores.php" method="GET">
+      <!-- Checkbox -->
+      <fieldset>
+        <!-- Aqui un pequeño ejemplo de usar fieldset con legend -->
+        <legend>Profesor</legend>
+        <!-- que es importante en interface -->
+        <input type="checkbox" name="profesor[]" value="ernesto" /> Ernesto
+        <input type="checkbox" name="profesor[]" value="isa" /> Isa
+        <input type="checkbox" name="profesor[]" value="alberto" /> Alberto
+      </fieldset>
+
+      <br/><br/>
+
+      <label for="asignatura">Asignatura:</label>
+      <select id="asignatura" name="asignatura" required>
+        <option value="">Selecciona una asignatura</option>
+        <option>Desarrollo web en entorno cliente</option>
+        <option>Desarrollo web en entorno servidor</option>
+        <option>Despliegue de aplicaciones web</option>
+        <option>Diseño de interfaces web</option>
+        <option>Digitalización aplicada a los sectores productivos</option>
+        <option>Sostenibilidad aplicada al sistema productivo</option>
+        <option>Proyecto intermodular de desarrollo de aplicaciones web</option>
+      </select>
+
+      <br/><br/>
+
+      <label for="hora">Hora:</label>
+      <input type="text" id="hora" name="hora" required />
+
+      <br/><br/>
+      <label for="descripcion">Descripción:</label><br />
+      <textarea
+        id="descripcion"
+        name="descripcion"
+        rows="5"
+        cols="40"
+        placeholder="Escribe una descripción"
+      ></textarea>
+
+      <br/><br/>
+      <button type="submit">Enviar</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
