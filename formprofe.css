@@ -1,6 +1,14 @@
+html{
+  /* Medida base del documento; sirve como referencia para convertir a porcentajes. */
+  width: 1100px;
+  background-color: #c64e4e;
+}
+
 body {
   margin: 30px;
-  padding: 20px;
+  padding: 20px;  
+  /* Medida base del contenedor */
+  width: 800px;
   border: 3px solid #000;
   background-color: #f2f2f2;
   color: #222;
@@ -16,6 +24,7 @@ h1 {
 }
 
 form {
+  /* Medida base del formulario: 600px de los 800px disponibles en body. */
   width: 600px;
   margin: 0 auto;
   padding: 25px;
@@ -37,6 +46,7 @@ legend {
 
 label {
   display: inline-block;
+  /* Medida base de la etiqueta: 110px de los 600px del formulario. */
   width: 110px;
   margin-bottom: 10px;
 }
@@ -44,6 +54,7 @@ label {
 select,
 input[type="text"],
 textarea {
+  /* Medida base de los campos: 360px de los 600px del formulario. */
   width: 360px;
   padding: 8px;
   border: 1px solid #999;

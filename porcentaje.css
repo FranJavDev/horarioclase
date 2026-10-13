@@ -1,0 +1,87 @@
+html{
+  width: 1100px;
+  background-color: #970000;
+}
+
+body {
+  margin: 30px;
+  padding: 20px;  
+  /* 800px ÷ 1100px × 100 = 72,73%; el porcentaje se calcula sobre html. */
+  width: 72.73%;
+  border: 3px solid #000;
+  background-color: #f2f2f2;
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin: 0 0 25px 0;
+  padding: 15px;
+  background-color: #2f5597;
+  color: white;
+  font-size: 28px;
+}
+
+form {
+  /* 600px ÷ 800px × 100 = 75%; el porcentaje se calcula sobre body. */
+  width: 75%;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: white;
+  border: 1px solid #999;
+}
+
+fieldset {
+  margin: 0 0 20px 0;
+  padding: 15px;
+  border: 1px solid #999;
+}
+
+legend {
+  padding: 5px 10px;
+  background-color: #d9e2f3;
+  font-weight: bold;
+}
+
+label {
+  display: inline-block;
+  /* 110px ÷ 600px × 100 = 18,33%; el porcentaje se calcula sobre form. */
+  width: 18.33%;
+  margin-bottom: 10px;
+}
+
+select,
+input[type="text"],
+textarea {
+  /* 360px ÷ 600px × 100 = 60%; el porcentaje se calcula sobre form. */
+  width: 60%;
+  padding: 8px;
+  border: 1px solid #999;
+  font-family: Arial, sans-serif;
+}
+
+textarea {
+  vertical-align: top;
+  resize: vertical;
+}
+
+button {
+  margin: 15px 8px 0 0;
+  padding: 8px 16px;
+  border: 1px solid #555;
+  background-color: #e7e7e7;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #2f5597;
+  color: white;
+}
+
+button:hover {
+  background-color: #cfcfcf;
+}
+
+button[type="submit"]:hover {
+  background-color: #1f3d73;
+}
